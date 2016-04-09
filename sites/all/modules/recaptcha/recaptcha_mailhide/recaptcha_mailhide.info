@@ -1,8 +1,7 @@
-name = reCAPTCHA
-description = Uses the reCAPTCHA web service to improve the CAPTCHA system.
+name = reCAPTCHA Mailhide
+description = Uses the reCAPTCHA web service to protect email addresses.
 core = 6.x
 package = Spam control
-dependencies[] = captcha
 
 ; Information added by Drupal.org packaging script on 2015-06-27
 version = "6.x-1.8"
