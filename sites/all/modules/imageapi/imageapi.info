@@ -4,9 +4,8 @@ package = ImageCache
 core = 6.x
 php = 5.1
 
-; Information added by drupal.org packaging script on 2011-05-16
-version = "6.x-1.10"
+; Information added by Drupal 6 LTS vendors on 2018-10-08
+version = "6.x-1.11"
 core = "6.x"
 project = "imageapi"
-datestamp = "1305563215"
-
+datestamp = "1539023526"
