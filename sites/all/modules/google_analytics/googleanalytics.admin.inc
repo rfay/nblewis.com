@@ -67,8 +67,8 @@ function googleanalytics_admin_settings_form(&$form_state) {
 
   if ($visibility == 2 && !$access) {
     $form['page_vis_settings'] = array();
-    $form['page_vis_settings']['visibility'] = array('#type' => 'value', '#value' => 2);
-    $form['page_vis_settings']['pages'] = array('#type' => 'value', '#value' => $pages);
+    $form['page_vis_settings']['googleanalytics_visibility'] = array('#type' => 'value', '#value' => 2);
+    $form['page_vis_settings']['googleanalytics_pages'] = array('#type' => 'value', '#value' => $pages);
   }
   else {
     $options = array(t('Add to every page except the listed pages.'), t('Add to the listed pages only.'));
@@ -267,7 +267,7 @@ function googleanalytics_admin_settings_form(&$form_state) {
   );
 
   // Advanced feature configurations.
-  $user_access_add_js_snippets = !user_access('add JS snippets for google analytics');
+  $user_access_add_js_snippets = user_access('add JS snippets for google analytics') ? FALSE : TRUE;
   $user_access_add_js_snippets_permission_warning = $user_access_add_js_snippets ? ' <em>' . t('This field has been disabled because you do not have sufficient permissions to edit it.') . '</em>' : '';
   $form['advanced'] = array(
     '#type' => 'fieldset',
@@ -319,8 +319,8 @@ function googleanalytics_admin_settings_form(&$form_state) {
   );
   $form['advanced']['googleanalytics_trackdoubleclick'] = array(
     '#type' => 'checkbox',
-    '#title' => t('Track DoubleClick data'),
-    '#description' => t('If checked, the alternative Google <a href="@doubleclick">DoubleClick data tracking</a> is used to enable AdWords remarketing features. If you choose this option you will need to <a href="@privacy">update your privacy policy</a>.', array('@doubleclick' => url('http://support.google.com/analytics/bin/answer.py', array('query' => array('answer' => '2444872'))), '@privacy' => url('http://support.google.com/analytics/bin/answer.py', array('query' => array('answer' => '2636405'))))),
+    '#title' => t('Track display features'),
+    '#description' => t('The display features plugin can be used to enable Display Advertising Features in Google Analytics, such as Remarketing, Demographics and Interest Reporting, and more. <a href="@displayfeatures">Learn more about Display Advertising Features in Google Analytics</a>. If you choose this option you will need to <a href="@privacy">update your privacy policy</a>.', array('@displayfeatures' => 'https://support.google.com/analytics/answer/3450482', '@privacy' => url('https://support.google.com/analytics/answer/2700409'))),
     '#default_value' => variable_get('googleanalytics_trackdoubleclick', FALSE),
   );
   $form['advanced']['codesnippet'] = array(
