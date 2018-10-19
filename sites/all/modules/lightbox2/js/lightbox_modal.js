@@ -1,4 +1,3 @@
-// $Id: lightbox_modal.js,v 1.1.2.5 2010/06/07 17:22:03 snpower Exp $
 
 function lightbox2_login() {
   $("a[href*='/user/login'], a[href*='?q=user/login']").each(function() {

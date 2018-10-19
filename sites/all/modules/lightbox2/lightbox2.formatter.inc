@@ -1,5 +1,4 @@
 <?php
-// $Id: lightbox2.formatter.inc,v 1.1.2.30 2010/09/22 10:47:15 snpower Exp $
 
 /**
  * @file

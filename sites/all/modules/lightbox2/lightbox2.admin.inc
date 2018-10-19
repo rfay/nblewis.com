@@ -1,5 +1,4 @@
 <?php
-// $Id: lightbox2.admin.inc,v 1.1.2.38 2010/09/24 08:41:02 snpower Exp $
 
 /**
  * @file

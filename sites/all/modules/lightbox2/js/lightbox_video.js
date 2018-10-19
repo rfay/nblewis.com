@@ -1,4 +1,3 @@
-/* $Id: lightbox_video.js,v 1.1.4.20 2010/09/21 17:57:22 snpower Exp $ */
 
 /**
  * Lightbox video

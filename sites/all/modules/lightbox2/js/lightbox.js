@@ -1,4 +1,3 @@
-/* $Id: lightbox.js,v 1.5.2.6.2.136 2010/09/24 08:39:40 snpower Exp $ */
 
 /**
  * jQuery Lightbox
@@ -1156,13 +1155,12 @@ var Lightbox = {
     return (jQuery.inArray(key, keys) != -1 || jQuery.inArray(String(code), keys) != -1);
   },
 
-  filterXSS: function(str, allowed_tags) {
+  filterXSS: function(str) {
     var output = "";
     $.ajax({
       url: Drupal.settings.basePath + 'system/lightbox2/filter-xss',
       data: {
-        'string' : str,
-        'allowed_tags' : allowed_tags
+        'string' : str
       },
       type: "POST",
       async: false,

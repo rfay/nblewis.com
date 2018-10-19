@@ -1,8 +1,8 @@
-APIVersion: v1.2.0-40-g9f39c28d
+APIVersion: v1.3.0-12-gdac5a0da
 name: nblewis.com
 type: drupal6
 docroot: ""
-php_version: "5.6"
+php_version: "7.2"
 webserver_type: nginx-fpm
 router_http_port: "80"
 router_https_port: "443"
@@ -12,10 +12,10 @@ additional_fqdns: []
 provider: default
 
 
-# This config.yaml was created with ddev version v1.2.0-40-g9f39c28d 
-# webimage: drud/ddev-webserver:20180929_nginx_quit_immediately
-# dbimage: drud/ddev-dbserver:20181006_mariadb_upgrade
-# dbaimage: drud/phpmyadmin:v1.2.0
+# This config.yaml was created with ddev version v1.3.0-12-gdac5a0da 
+# webimage: drud/ddev-webserver:v1.3.0
+# dbimage: drud/ddev-dbserver:v1.3.0
+# dbaimage: drud/phpmyadmin:v1.3.0
 # However we do not recommend explicitly wiring these images into the
 # config.yaml as they may break future versions of ddev.
 # You can update this config.yaml using 'ddev config'.

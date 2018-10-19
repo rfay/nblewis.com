@@ -1,5 +1,4 @@
 <?php
-// $Id: page-node-lightbox2.tpl.php,v 1.1.2.2 2008/06/11 22:16:38 snpower Exp $
 
 /**
  * @file

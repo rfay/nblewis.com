@@ -1,4 +1,3 @@
-/* $Id: lightbox_lite.js,v 1.1.2.2.2.19 2010/06/07 14:54:30 snpower Exp $ */
 
 /**
  * Lightbox JS: Fullsize Image Overlays
